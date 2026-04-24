@@ -1,0 +1,177 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "acda0635-59a7-49c6-97a1-3e9e885a741b",
+  "location" : "/tmp/iceberg_warehouse/healthcare/patients",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1777018613955,
+  "last-column-id" : 15,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "Name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "Age",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 3,
+      "name" : "Gender",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "Blood Type",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "Medical Condition",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "Date of Admission",
+      "required" : false,
+      "type" : "date"
+    }, {
+      "id" : 7,
+      "name" : "Doctor",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 8,
+      "name" : "Hospital",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 9,
+      "name" : "Insurance Provider",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 10,
+      "name" : "Billing Amount",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 11,
+      "name" : "Room Number",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 12,
+      "name" : "Admission Type",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 13,
+      "name" : "Discharge Date",
+      "required" : false,
+      "type" : "date"
+    }, {
+      "id" : 14,
+      "name" : "Medication",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 15,
+      "name" : "Test Results",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "Sadia",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 4581575165479772763,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 4581575165479772763,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 7373060117859610163,
+    "timestamp-ms" : 1777018610547,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1777018597330",
+      "added-data-files" : "3",
+      "added-records" : "55500",
+      "added-files-size" : "2061511",
+      "changed-partition-count" : "1",
+      "total-records" : "55500",
+      "total-files-size" : "2061511",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.4.1",
+      "app-id" : "local-1777018597330",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/tmp/iceberg_warehouse/healthcare/patients/metadata/snap-7373060117859610163-1-13ceac7c-52f8-4014-94aa-369e8a56c173.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 4581575165479772763,
+    "parent-snapshot-id" : 7373060117859610163,
+    "timestamp-ms" : 1777018613955,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1777018597330",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "27706",
+      "deleted-records" : "27707",
+      "added-files-size" : "1034092",
+      "removed-files-size" : "1034125",
+      "changed-partition-count" : "1",
+      "total-records" : "55499",
+      "total-files-size" : "2061478",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.4.1",
+      "app-id" : "local-1777018597330",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.7.1 (commit 4a432839233f2343a9eae8255532f911f06358ef)"
+    },
+    "manifest-list" : "/tmp/iceberg_warehouse/healthcare/patients/metadata/snap-4581575165479772763-1-826a76db-c46d-4457-91c0-4903a82fe052.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1777018610547,
+    "snapshot-id" : 7373060117859610163
+  }, {
+    "timestamp-ms" : 1777018613955,
+    "snapshot-id" : 4581575165479772763
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1777018610547,
+    "metadata-file" : "/tmp/iceberg_warehouse/healthcare/patients/metadata/v1.metadata.json"
+  } ]
+}
