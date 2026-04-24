@@ -48,5 +48,6 @@ python scripts/iceberg_pipeline.py
 
 * `Kyle Wiley` ถูกลบสำเร็จทั้งสองแบบ
 
+นางสาวณัฐณิชา โซ๊ะมาลี 66102010579
 ---
 
